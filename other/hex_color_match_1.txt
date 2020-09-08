@@ -1,0 +1,11 @@
+11
+#BED
+{
+    color: #FfFdF8; background-color:#aef;
+    font-size: 123px;
+}
+#Cab
+{
+    background-color: #ABC;
+    border: 2px dashed #fff;
+}

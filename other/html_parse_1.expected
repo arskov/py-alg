@@ -1,0 +1,60 @@
+Start : article
+-> class > hentry
+Start : div
+-> class > entry-content
+Start : p
+End   : p
+Start : p
+End   : p
+Start : figure
+Empty : img
+-> src > tammy-strobel.jpg
+-> alt > Portrait of Tammy Strobel
+Start : figcaption
+End   : figcaption
+End   : figure
+Start : p
+End   : p
+Start : p
+End   : p
+Start : aside
+Start : h2
+End   : h2
+Start : ul
+Start : li
+End   : li
+Start : li
+End   : li
+Start : li
+End   : li
+End   : ul
+End   : aside
+Start : div
+-> class > entry-content-asset
+Start : a
+-> href > photo-full.png
+Empty : img
+-> src > photo.png
+-> alt > The objects Tammy removed from her life after moving
+End   : a
+End   : div
+Start : p
+End   : p
+Start : p
+End   : p
+Start : a
+-> class > entry-unrelated
+-> href > http://fake.site/
+End   : a
+End   : div
+Start : footer
+Start : p
+End   : p
+Start : div
+-> class > source-org vcard copyright
+Start : span
+-> class > org fn
+End   : span
+End   : div
+End   : footer
+End   : article
