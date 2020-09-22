@@ -1,3 +1,5 @@
+import sys
+
 def multiple(x, y):
     def add(a, b):
         running_sum, carryin, k, temp_a, temp_b = 0, 0, 1, a, b
@@ -16,4 +18,4 @@ def multiple(x, y):
     return running_sum
 
 if __name__ == "__main__":
-    print(multiple(3, 4))
+    print(multiple(int(sys.argv[1]), int(sys.argv[2])))
