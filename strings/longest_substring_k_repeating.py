@@ -27,6 +27,7 @@ class Solution:
                 # scan i - j for valid substring and update max_len so far if substring 
                 # probably update counter minus values from dic
                 # update i
+                raise "NOT IMPLEMENTED"
             dic[s[j]] += 1
             j += 1
         return max_len + 1 if max_len != float("-inf") else 0        
