@@ -1,6 +1,14 @@
 import random
+from typing import List
+
 
 class Solution:
+    """
+    >>> s = Solution()
+    >>> arr = [3,1,0,7,5,19,11,21,4,9,14]
+    >>> s.thirdMax(arr)
+    14
+    """
     def thirdMax(self, nums: List[int]) -> int:
         """Quickselect"""
         if nums is None:
@@ -13,7 +21,7 @@ class Solution:
             return min(nums[0], min(nums[1], nums[2]))
         _len = len(nums)
         k_smallest_idx = _len - 3
-        return self.select({*nums}, 0, _len - 1, k_smallest_idx)
+        return self.select(nums, 0, _len - 1, k_smallest_idx)
     
     def partition(self, nums: List[int], left: int, right: int) -> int:
         pivot_idx = random.randint(left, right)
@@ -37,4 +45,8 @@ class Solution:
             return self.select(nums, pi + 1, right, k)
         else:
             return self.select(nums, left, pi - 1, k)
-        
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod(verbose=True)
+
