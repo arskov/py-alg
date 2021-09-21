@@ -15,8 +15,8 @@ def custom_criteria_sort(input_str):
                 item[0] = 3
         item[1] = c
         tuple_list.append(tuple(item))
-        # now the sorted function sorts tuples acoordingly to field order
-        return "".join([x[1] for x in sorted(tuple_list)])
+    # now the sorted function sorts tuples acoordingly to field order
+    return "".join([x[1] for x in sorted(tuple_list)])
 
 if __name__ == "__main__":
     print(custom_criteria_sort("Sorting1234"))
